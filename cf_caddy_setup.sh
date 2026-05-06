@@ -18,7 +18,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # (1) Input Required Information
-read -p "1. Domain Name (e.g., bts.arakan.info): " DOMAIN
+read -p "1. Domain Name (e.g., vps.example.com): " DOMAIN
 read -p "2. Cloudflare API Token: " CF_TOKEN
 read -p "3. VPN Path (e.g., /src/assets): " WS_PATH
 read -p "4. Backend Port (3x-ui port - e.g., 58834): " VLESS_PORT
