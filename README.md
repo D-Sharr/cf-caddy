@@ -19,4 +19,4 @@ Before running the script, ensure you have:
 
 Log in to your VPS terminal as root and run the following command:
 ```bash
-bash <(curl -Ls [https://raw.githubusercontent.com/D-Sharr/cf-caddy/refs/heads/main/cf_caddy_setup.sh](https://raw.githubusercontent.com/D-Sharr/cf-caddy/refs/heads/main/cf_caddy_setup.sh))
+bash <(curl -Ls https://raw.githubusercontent.com/D-Sharr/cf-caddy/refs/heads/main/cf_caddy_setup.sh)
