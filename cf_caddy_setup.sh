@@ -209,7 +209,10 @@ ${DOMAIN} {
     }
     root * /var/www/html
     file_server
-    reverse_proxy ${WS_PATH} 127.0.0.1:${VLESS_PORT}
+    reverse_proxy ${WS_PATH} 127.0.0.1:${VLESS_PORT} {
+        header_up X-Forwarded-For {http.request.header.CF-Connecting-IP}
+        header_up X-Real-IP {http.request.header.CF-Connecting-IP}
+    }
 }
 EOF
 
